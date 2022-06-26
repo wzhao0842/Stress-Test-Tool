@@ -8,12 +8,13 @@ Stress Test is a techinique to compare two files - a file you wrote as solution 
 By doing that, you can quickly find the counter case to debug
 
 ## Settings 
-".custom_aliases" file and "template" folder must both be place in home directory "~"
+".bash_aliases" file and "template" folder must both be place in home directory "~" (if you have ".bash_aliases" already, you can just add it in)
+use command "source ~/.bash_aliases" to update
 
 #### (Make sure the PATH variable includes your home directory)
 
 ## How to Use
-1. running "stest yourFile testFile" - "yourFile" is the file name of your solution, "testFile" is the file name of the compared file 
+1. running "stest <yourFile> <testFile>" - "<yourFile>" is the file name of your solution, "<testFile>" is the file name of the compared file 
 
 (file names with the suffix) 
 
@@ -31,4 +32,4 @@ data.txt: file that contains input
 4. run "./comparator"
 
 ## Attentions
-if you change your original file, you have to rerun "stest yourFile testFile" to update the mycode and testcode files
+if you change your original file, you have to rerun "stest <yourFile> <testFile>" to update the mycode and testcode files
