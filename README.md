@@ -2,10 +2,10 @@
 A effective way to stress test in Competitive Programming
 
 ## Intro
-We have all being through failing of solutions. After hours of debugging, we sometimes get demotivated and tired at the end. So I decide to create this ultimate tool.
+We have all being through failing of solutions. After hours of debugging, we get demotivated and tired at the end. So today I decide to create this ultimate tool.
 
-Stress Test is a techinique to compare two files - a file you wrote as solution and a file that guarantee is correct - 
-By doing that, you can quickly find the counter case to debug
+Stress Test is a techinique that compares two files and their outputs - a file you wrote as solution and a file that guarantee is correct - 
+By doing that, you can quickly find the input case to debug
 
 ## Settings 
 ".bash_aliases" file and "template" folder must both be place in home directory "~" (if you have ".bash_aliases" already, you can just add it in)
@@ -18,14 +18,14 @@ use command "source ~/.bash_aliases" to update
 
 (file names with the suffix) 
 
-By running the aobve command, there will be 5 files created:
+By running the aobve command, 5 files will be created:
 mycode.cpp: your solution 
 testcode.cpp: compared solution 
 generator.cpp: data generator
 comparator.cpp: compares the 2 files
 data.txt: file that contains input 
 
-2. you then can change the generator file of however you want
+2. change the generator file of however you want
 
 3. compile the comparator file "g++ comparator.cpp -o comparator" 
 
